@@ -24,7 +24,7 @@ async function postRegisterUser(req, res) {
   }
   
 
-  const userExists = await  userSchema.exists({
+  const userExists = await  userschema.exists({
     email,
   });
 
@@ -35,7 +35,7 @@ async function postRegisterUser(req, res) {
     });
   }
 
-  const user =  userSchema({
+  const user =  userschema({
     
     password: await hashPassword(password),
     email,
