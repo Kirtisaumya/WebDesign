@@ -150,11 +150,12 @@ ul li a:hover{
     height: 380px;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
     position: absolute;
-    top: -20px;
+    top: -200px;
     left: 870px;
     transform: translate(0%,-5%);
     border-radius: 10px;
     padding: 25px;
+    
 }
 
 .form h2{
@@ -242,4 +243,78 @@ ul li a:hover{
 }
 .icons ion-icon:hover{
     color: #2cb27c;
+}
+.form {
+    width: 300px;
+    height: auto; /* Change height to auto */
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: relative; /* Change position to relative */
+    margin-top: 20px; /* Add margin-top to create space between content */
+    padding: 25px;
+    box-sizing: border-box; /* Add box-sizing to include padding and border in the width */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 90%;
+    }
+   
+    .menu {
+        width: 100%;
+        text-align: center;
+    }
+    ul {
+        display:inline-block;
+        text-align:center;
+        padding-left: 0
+    }
+    ul li {
+        display: inline-flex;
+        margin: 10px 0;
+    }
+    .content {
+        width: 90%;
+    }
+    .form {
+        left: 50%;
+        transform: translate(-50%,42%);
+        
+        width: 250px;
+        position: relative; /* Change position to absolute */
+        
+    }
+    .content .cn {
+        width: 160px;
+        height: 40px;
+        background: #2cb27c;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 100px; /* Change margin-left to position the button to its left */
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .4s ease;
+        display: block;
+        text-align: center;
+    }
+
+    .content .cn a {
+        text-decoration: none;
+        color: #000;
+        transition: .3s ease;
+    }
+
+    .cn:hover {
+        background-color: #fff;
+    }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 30px;
+    }
+    .form {
+        width: 80%;
+    }
 }
